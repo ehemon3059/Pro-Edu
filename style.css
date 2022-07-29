@@ -180,6 +180,26 @@
      cursor: pointer;
 
  }
+ .extra-card{
+    background-color: #c7f7f93c;
+ }
+ .explore-title{
+    margin-top: 100px;
+ }
+ .explore-title h1{
+    font-size: 35px;
+    font-weight: 700;
+    
+ }
+ .explore-title p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+ }
+ .explore-title h4{
+font-size: 15px;
+ }
+
 
  /* Media Query For Mobile Devices Start */
  @media screen and (max-width: 576px) {
@@ -376,5 +396,19 @@
     .big-title p {
         margin-left: 70px !important;
         margin-right: 70px !important;
+    }
+    
+    .get-btn{
+        width: 100px;
+        height: 40px;
+        color: white;
+        background-color: #03aa72;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        border: 0;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 20px!important;
     }
  }
