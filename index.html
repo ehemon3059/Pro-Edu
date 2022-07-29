@@ -30,7 +30,19 @@
             height: 300px; 
             background-color: #0094949e;
             border-radius: 10px;
+            background-color: #058ed7cf;
+           
         
+        }
+        .register button{
+            font-size: 20px;
+            font-weight: 700;
+            width: 196px;
+            max-height: 60px;
+            color:#058ed7cf;
+            background-color: aliceblue;
+            border: 0px;
+
         }
         .company-socal-links{
             margin: 10px;
@@ -40,10 +52,70 @@
             text-decoration: none;
             cursor: pointer;
         }
-        .my-gap{
-              --bs-gutter-x: 100px; 
-             --bs-gutter-y: 100px;  
+        .part-1{
+            margin-left: 40px;
         }
+        .part-1 h1{
+           font-family: 'Roboto', sans-serif;
+           font-size: 3vw;
+           font-weight: 600;
+        }
+        .part-1 p{
+            font-size: 1vw;
+             padding-right: 380px;
+        }
+
+        /* Media Query For Mobile Devices Start */
+        @media screen and (max-width: 576px) {
+            .register{
+            flex-direction: column;
+            }
+            .part-1 h1{
+                font-size: 5vw;
+            }
+            .part-1 p{
+            font-size: 4vw;
+             padding-right: 0px;
+            }
+            .part-1{
+                text-align: center;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            .register button{
+                margin-left: 0;
+           margin-right: 0 !important;
+                margin-bottom: 35px;
+            }
+        }
+
+        /* Media Query For Tablet Devices Start */
+        @media screen and (min-width:577px) and (max-width:992px) {
+             .register{
+            flex-direction: column;
+            }
+            .part-1 h1{
+                font-size:4vw;
+            }
+            .part-1 p{
+            font-size: 3vw;
+             padding-right: 0px;
+            }
+            .part-1{
+                text-align: center;
+                margin-left: 0;
+                margin-top: 30px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+            }
+            .register button{
+                margin-left: 0;
+           margin-right: 0 !important;
+                margin-bottom: 35px;
+            }
+        }
+      
     </style>
 </head>
 
@@ -259,17 +331,41 @@
         </section>
         <!-- Extra part End-->
 
+        <!-- Button trigger modal -->
+       
+        
+        <!-- Register Modal  start-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Thank you for registration
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Register  Modal End -->
+
         <!-- Register Now Start -->
+       
         <section>
-            <div class="container d-flex register justify-content-between align-items-center mb-5 mt-5">
-                <div class="part-1">
+            <div class="container register mb-5 mt-5 text-white  d-flex justify-content-between align-items-center ">
+                <div class="part-1 ">
                     <h1>Ready to join?</h1>
                     <p>It is a long established fact that a reader will be distracted by the
                     readable content of a page when looking at its layout.</p>
 
                 </div>
                 <div>
-                    <button class="btn btn-success">Register Now</button>
+                    <button class="btn btn-success me-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</button>
                 </div>
             </div>
         </section>
@@ -361,7 +457,7 @@
                                         believable. If you are going to use a passage of Lorem.
                                     </div>
                     
-                                    <div class="picture-name d-flex justify-content-between mt-5 ">
+                                    <div class="picture-name d-flex justify-content-start mt-5 ">
                                         <div>
                                             <img src="images/student/student-5.png" alt="">
                                         </div>
