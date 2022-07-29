@@ -319,12 +319,23 @@ font-size: 15px;
         font-size: 25px !important;
         font-weight: 700 !important;
      }
-         .big-title p {
-            font-size: 16px;
-             margin-left: 40px !important;
-             margin-right: 40px !important;
-         }
-
+    .big-title p {
+    font-size: 16px;
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+    }
+    .explore-title{
+        margin-top: 50px !important;
+    }
+    .explore-count h1{
+    font-size: 25px;
+    }
+    .explore-count h4{
+        font-size: 10px;
+    }
+    .explore-title p{
+        font-size: 15px;
+    }
 
  }
 
