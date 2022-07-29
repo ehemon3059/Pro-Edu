@@ -8,174 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&family=Roboto:wght@300;400;900&display=swap');
-        body {
-        
-            margin: 0 auto;
-            /* border: 2px solid black; */
-        }
-      
-   
-        .carousel-caption {
-            top: 30%;
-            bottom: auto;
-        }
-       .carousel-item img{
-        filter: brightness(50%);
-       }
-
-        .carousel-caption h1 {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 900;
-        }
-        .carousel-caption p{
-            font-family: 'Roboto', sans-serif;
-            font-weight:    400 ;
-        }
-        .register{
-            max-width:100%;
-            height: 300px; 
-            background-color: #0094949e;
-            border-radius: 10px;
-            background-color: #058ed7cf;
-           
-        
-        }
-        .register button{
-            font-size: 20px;
-            font-weight: 700;
-            width: 196px;
-            max-height: 60px;
-            color:#058ed7cf;
-            background-color: aliceblue;
-            border: 0px;
-
-        }
-        .company-socal-links{
-            margin: 10px;
-            padding: 20px;
-            font-size: 40px;
-            color: white !important;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .part-1{
-            margin-left: 40px;
-        }
-        .part-1 h1{
-           font-family: 'Roboto', sans-serif;
-           font-size: 3vw;
-           font-weight: 600;
-        }
-        .part-1 p{
-            font-size: 1vw;
-             padding-right: 380px;
-        }
-
-        .custom-footer{
-              margin-top: 100px;
-                height: 520px;
-                width: 100%;
-                background-color: #181818;
-
-        }
-        .address-text{
-            padding-top: 100px;
-        }
-        .social-links{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        .socail-link{
-        margin: 10px;
-        padding: 20px;
-        font-size: 25px;
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-
-        }
-
-        /* Media Query For Mobile Devices Start */
-        @media screen and (max-width: 576px) {
-            .register{
-            flex-direction: column;
-            }
-            .part-1 h1{
-                font-size: 5vw;
-            }
-            .part-1 p{
-            font-size: 4vw;
-             padding-right: 0px;
-            }
-            .part-1{
-                text-align: center;
-                margin-left: 0;
-                margin-top: 30px;
-            }
-            .register button{
-                margin-left: 0;
-           margin-right: 0 !important;
-                margin-bottom: 35px;
-            }
-
-            /* Course responsive for Mobile */
-            .course-mobile{
-                display: flex;
-                flex-direction: row;
-                
-                width: 420px !important;
-                height: 600px !important;
-                text-align: center;
-                
-            
-            }
-            .course-mobile img{
-                width: 100% !important;
-            }
-            .course-mobile h2{
-                font-size: 18px !important;
-
-            }
-            .course-mobile p {
-                font-size: 15px !important;
-            }
-            .div-gap{
-                margin-top: 20px;
-            }
-            
-            
-        }
-
-        /* Media Query For Tablet Devices Start */
-        @media screen and (min-width:577px) and (max-width:992px) {
-             .register{
-                flex-direction: column;
-            }
-            .part-1 h1{
-                font-size:4vw;
-            }
-            .part-1 p{
-            font-size: 3vw;
-             padding-right: 0px;
-            }
-            .part-1{
-                text-align: center;
-                margin-left: 0;
-                margin-top: 30px;
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-            .register button{
-                margin-left: 0;
-                margin-right: 0 !important;
-                margin-bottom: 35px;
-            }
-        }
-      
-    </style>
+        <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
@@ -219,14 +53,7 @@
         
             <section class="mt-5 ">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
+                    
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/cover/cover-1.png" class="d-block w-100 img-fluid" alt="...">
@@ -235,6 +62,7 @@
                                 Learning</h1>
                                 <p>It is a long established fact that a reader will be distracted by the readable
                                 content of a page when looking at its layout.</p>
+                                <button class="get-btn">Get Started</button>
                             </div>
                             
                             
@@ -246,6 +74,7 @@
                                 Learning</h1>
                             <p>It is a long established fact that a reader will be distracted by the readable
                                 content of a page when looking at its layout.</p>
+                                <button class="get-btn">Get Started</button>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -255,6 +84,7 @@
                                 Learning</h1>
                             <p>It is a long established fact that a reader will be distracted by the readable
                                 content of a page when looking at its layout.</p>
+                                <button class="get-btn">Get Started</button>
                             </div>
                         </div>
                     </div>
@@ -273,7 +103,7 @@
         <!-- All Courses section start  -->
         <section>
             <div class="container">
-                <div class="Courses m-5 d-flex flex-column align-items-center">
+                <div class="Courses m-5 d-flex flex-column align-items-center first-title">
                     <h1>Discover Our Popular
                         Courses</h1>
                     <p>It is a long established fact that a reader will be distracted by the readable
@@ -291,7 +121,7 @@
                 <div class="row row-cols-1 row-cols-md-1  row-cols-lg-2 two-box">
 
                     <div class="col">
-                        <div class="card" >
+                        <div class="card div-gap" >
                             <div class="row  course-mobile" style="width: 630px; height: 200px;">
                                 <div class="col-md-4 ">
                                     <img src="images/course/course-1.png" class=" rounded-start img-fluid" alt="...">
@@ -301,7 +131,7 @@
                                         <h2 class="card-title">Fundamental Of UI/UX Design</h2>
                                         <p class="card-text">Some quick example text to build on the card title
                                             and make up the bulk of the card.</p>
-                                        <p class="card-text">Price : 20$</p>
+                                        <p class="card-text course-price">Price : 20$</p>
                                     </div>
                                 </div>
                             </div>
@@ -318,10 +148,82 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h2 class="card-title">Fundamental Of UI/UX Design</h2>
+                                        <h2 class="card-title">Javascript Basic to advanced</h2>
                                         <p class="card-text">Some quick example text to build on the card title
                                             and make up the bulk of the card.</p>
-                                        <p class="card-text">Price : 20$</p>
+                                        <p class="card-text course-price">Price : 20$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card div-gap">
+                            <div class="row  course-mobile" style="width: 630px; height: 200px;">
+                                <div class="col-md-4">
+                                    <img src="images/course/course-3.png" class=" rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Fullstack Web Development</h2>
+                                        <p class="card-text">Some quick example text to build on the card title
+                                            and make up the bulk of the card.</p>
+                                        <p class="card-text course-price">Price : 20$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card div-gap">
+                            <div class="row  course-mobile" style="width: 630px; height: 200px;">
+                                <div class="col-md-4">
+                                    <img src="images/course/course-4.png" class=" rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Digital Marketing</h2>
+                                        <p class="card-text">Some quick example text to build on the card title
+                                            and make up the bulk of the card.</p>
+                                        <p class="card-text course-price">Price : 20$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card div-gap">
+                            <div class="row  course-mobile" style="width: 630px; height: 200px;">
+                                <div class="col-md-4">
+                                    <img src="images/course/course-5.png" class=" rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Photography Basic Rules</h2>
+                                        <p class="card-text">Some quick example text to build on the card title
+                                            and make up the bulk of the card.</p>
+                                        <p class="card-text course-price">Price : 20$</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="card div-gap">
+                            <div class="row  course-mobile" style="width: 630px; height: 200px;">
+                                <div class="col-md-4">
+                                    <img src="images/course/course-6.png" class=" rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Motion Graphics</h2>
+                                        <p class="card-text">Some quick example text to build on the card title
+                                            and make up the bulk of the card.</p>
+                                        <p class="card-text course-price">Price : 20$</p>
                                     </div>
                                 </div>
                             </div>
@@ -330,13 +232,7 @@
                     </div>
                        
                 </div>
-                   
-                
-                
-                    
-                
-               
-                    
+
                 
             </div>
             
@@ -345,11 +241,11 @@
 
         <!-- See More Courses Button -->
         <section class="container mt-5 text-center d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block">
-            <button class="btn btn-primary">See More Courses</button>
+            <button class="see-more-btn">See More Courses</button>
         </section>
         <!-- See More Courses Button -->
         <section class="container mt-5 text-center d-xxl-none d-xxl-block d-xl-none d-lg-none d-xl-block">
-            <button class="btn btn-primary">View All</button>
+            <button class="get-btn">View All</button>
         </section>
 
         <!-- Extra part start -->
@@ -420,8 +316,8 @@
 
         <!-- Register Now Start -->
        
-        <section class="container">
-            <div class=" register mb-5 mt-5 text-white  d-flex justify-content-between align-items-center ">
+        <section class="container registation-section">
+            <div class=" register  text-white  d-flex justify-content-between align-items-center ">
                 <div class="part-1 ">
                     <h1>Ready to join?</h1>
                     <p>It is a long established fact that a reader will be distracted by the
@@ -437,7 +333,7 @@
         <!-- Successfull Students history Start -->
 
         <Section>
-            <div class="container">
+            <div class="container student-history">
                 
                 <div class="successfull-student-text">
                     <h1>Meet Our Successfull Students</h1>
@@ -445,7 +341,7 @@
                     readable content of a page when looking at its layout</p>
                 </div>
                 
-                    <div class="student-picture d-flex  justify-content-around row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" >
+                    <div class="student-picture d-flex  justify-content-around row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4  mt-5" >
                         <div class="card" style="width: 18rem;">
                             <img src="images/student/student-1.png" class="card-img-top img-fluid " alt="...">
                             <div class="card-body">
@@ -484,15 +380,15 @@
 
         <!-- View All Button -->
         <section class="container mt-5 text-center mb-5 d-md-none d-lg-block">
-            <button class="btn btn-primary">View All</button>
+            <button class="get-btn">View All</button>
         </section>
 
         <!-- Students Feedback Start -->
         <section>
-            <div class="container mt-5">
+            <div class="container ">
                 <div class="title-feedback text-center">
                     <h1>Some Students Feedback</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable
+                    <p class="mt-4">It is a long established fact that a reader will be distracted by the readable
                     content of a page when looking at its layout.</p>
                 </div>
                
@@ -574,15 +470,15 @@
 
         <!-- View All Button -->
         <section class="container mt-5 text-center mb-5 d-xxl-none d-xxl-block d-xl-none d-lg-none d-xl-block">
-            <button class="btn btn-primary">View All</button>
+            <button class="get-btn">View All</button>
         </section>
 
         <!-- Frequently Asked Questions start -->
         <section>
             <div class="container mt-5 mb-5">
-                <div class="question-title text-center mt-5 mb-5">
+                <div class="question-title text-center mt-5 mb-5 big-title">
                     <h1>Frequently Asked Questions</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable
+                    <p class="mt-5">It is a long established fact that a reader will be distracted by the readable
                     content of a page when looking at its layout.</p>
                 </div>
 
@@ -699,7 +595,7 @@
         <!-- companies logo start -->
         <section>
             <div class="container mt-5  d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block">
-                <div class="text-center">
+                <div class="text-center big-title">
                     <h1>Trusted by over 800+ companies</h1>
                 </div>
                 <div class="comapny-logos d-flex justify-content-between mt-5 mb-5">

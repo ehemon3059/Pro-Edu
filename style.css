@@ -1,0 +1,380 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&family=Roboto:wght@300;400;900&display=swap');
+
+ body {
+
+     margin: 0 auto;
+     /* border: 2px solid black; */
+ }
+
+
+ .carousel-caption {
+     top: 30%;
+     bottom: auto;
+ }
+
+ .carousel-item img {
+     filter: brightness(50%);
+ }
+
+ .carousel-caption h1 {
+    font-size: 4vw;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 900;
+ }
+ 
+
+    .carousel-caption p {
+        font-size: 1vw;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        
+    }
+    .course-price{
+    color: #038459;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+ }
+ .get-btn{
+    width: 150px;
+    height: 60px;
+    color: white;
+    background-color: #03aa72;
+    text-align: center;
+    font-size:20px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+ }
+ .see-more-btn{
+    width: 220px;
+    height: 60px;
+    color: white;
+    background-color: #03aa72;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+
+ }
+ .registation-section{
+    margin-top: 150px;
+ }
+ .student-history{
+    margin-top: 120px;
+ }
+ .first-title{
+    text-align: center;
+ }
+
+ .first-title h1{
+    font-size: 3vw;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-right: 200px;
+
+ }
+ .title-feedback h1{
+    font-size: 3vw;
+    font-weight: 700;
+    margin-top: 100px;
+
+ }
+ 
+ .big-title{
+    margin-top: 120px;
+ }
+ .big-title h1{
+
+    font-size: 3vw;
+    font-weight: 700;
+ }
+ .big-title p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 220px;
+    margin-right: 220px;
+    color: #181818c3;
+ }
+ .div-gap{
+    margin-bottom: 20px;
+ }
+
+ .register {
+     max-width: 100%;
+     height: 300px;
+     background-color: #0094949e;
+     border-radius: 10px;
+     background-color: #058ed7cf;
+
+
+ }
+
+ .register button {
+     font-size: 20px;
+     font-weight: 700;
+     width: 196px;
+     max-height: 60px;
+     color: #058ed7cf;
+     background-color: aliceblue;
+     border: 0px;
+
+ }
+.successfull-student-text h1{
+    font-size: 3vw;
+    font-weight: 600;
+    padding-right: 700px;
+
+}
+ .company-socal-links {
+     margin: 10px;
+     padding: 20px;
+     font-size: 40px;
+     color: white !important;
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ .part-1 {
+     margin-left: 40px;
+ }
+
+ .part-1 h1 {
+     font-family: 'Roboto', sans-serif;
+     font-size: 3vw;
+     font-weight: 600;
+ }
+
+ .part-1 p {
+     font-size: 1vw;
+     padding-right: 380px;
+ }
+
+ .custom-footer {
+     margin-top: 100px;
+     height: 520px;
+     width: 100%;
+     background-color: #181818;
+
+ }
+
+ .address-text {
+     padding-top: 100px;
+ }
+
+ .social-links {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+
+ .socail-link {
+     margin: 10px;
+     padding: 20px;
+     font-size: 25px;
+     color: white;
+     text-decoration: none;
+     cursor: pointer;
+
+ }
+
+ /* Media Query For Mobile Devices Start */
+ @media screen and (max-width: 576px) {
+    .carousel-caption {
+            top: 5%;
+            bottom: auto;
+        }
+     .carousel-caption h1 {
+         font-size: 16px !important;
+     }
+
+
+     .carousel-caption p {
+         font-size: 12px !important;
+         font-weight: 300 !important;
+     }
+
+          .get-btn {
+              width: 90px;
+              height: 35px;
+              color: white;
+              background-color: #03aa72;
+              text-align: center;
+              font-size: 14px;
+              font-weight: 200;
+              border: 0;
+              border-radius: 5px;
+              font-family: 'Roboto', sans-serif;
+          }
+     .first-title h1{
+        font-size: 25px !important;
+        font-weight: 700 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+     }
+
+     .register {
+         flex-direction: column;
+     }
+     .succesfull-student-text{
+        text-align: center;
+     }
+         .successfull-student-text h1 {
+            text-align: center;
+             font-size: 6vw;
+             font-weight: 700;
+             padding-left: 50px !important;
+             padding-right: 50px !important;
+         
+    
+         }
+         .successfull-student-text p {
+            font-size: 12px !important;
+            font-weight: 400 !important;
+            color: #181818 !important;
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+         }
+
+     .part-1 h1 {
+         font-size: 5vw;
+     }
+
+     .part-1 p {
+         font-size: 4vw;
+         padding-right: 0px;
+     }
+
+     .part-1 {
+         text-align: center;
+         margin-left: 0;
+         margin-top: 30px;
+     }
+
+     .register button {
+         margin-left: 0;
+         margin-right: 0 !important;
+         margin-bottom: 35px;
+     }
+
+     /* Course responsive for Mobile */
+     .course-mobile {
+         display: flex;
+         flex-direction: row;
+
+         width: 420px !important;
+         height: 600px !important;
+         text-align: center;
+
+
+     }
+
+     .course-mobile img {
+         width: 100% !important;
+     }
+
+     .course-mobile h2 {
+         font-size: 18px !important;
+
+     }
+
+     .course-mobile p {
+         font-size: 15px !important;
+     }
+
+     .div-gap {
+         margin-top: 20px;
+     }
+     .title-feedback h1{
+        font-size: 25px !important;
+        font-weight: 700 !important;
+        margin-left: 80px;
+        margin-right: 80px;
+
+     }
+     .big-title h1{
+        font-size: 25px !important;
+        font-weight: 700 !important;
+     }
+         .big-title p {
+            font-size: 16px;
+             margin-left: 40px !important;
+             margin-right: 40px !important;
+         }
+
+
+ }
+
+ /* Media Query For Tablet Devices Start */
+ @media screen and (min-width:577px) and (max-width:992px) {
+    .carousel-caption h1{
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 4vw !important;
+        font-weight: 500 !important;
+
+    }
+    .carousel-caption p {
+        font-size: 2vw !important;
+        font-weight: 400 !important;
+
+    }
+     .register {
+         flex-direction: column;
+     }
+
+    .first-title h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+    }
+    
+     .part-1 h1 {
+         font-size: 4vw;
+     }
+
+     .part-1 p {
+         font-size: 3vw;
+         padding-right: 0px;
+     }
+
+     .part-1 {
+         text-align: center;
+         margin-left: 0;
+         margin-top: 30px;
+         padding-left: 30px;
+         padding-right: 30px;
+     }
+
+     .register button {
+         margin-left: 0;
+         margin-right: 0 !important;
+         margin-bottom: 35px;
+     }
+
+    .successfull-student-text h1{
+        font-weight: 700;
+        padding-right: 0 !important;
+    }
+    .successfull-student-text p{
+        font-size: 18px !important;
+
+        margin-right: 250px !important;
+    }
+
+    .title-feedback p {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+
+    }
+    .big-title p {
+        margin-left: 70px !important;
+        margin-right: 70px !important;
+    }
+ }
